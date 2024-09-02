@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform Example</title>
+  <style>
+    body {
+      margin: 0;
+      background: #B6EBE7;
+    }
+    div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 200px;
+      background: #9382E4;
+    }
+    .rotate {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    .sm {
+      width: 100px;
+      height: 100px;
+      background: #B6EBE7;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <div class="rotate"></div>
+  <div class="sm"></div>
+</body>
+</html>
