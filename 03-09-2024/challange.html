@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout</title>
+  <style>
+    body {
+      margin: 0;
+      background: #F3F3F3;
+    }
+    .parent {
+      display: grid;
+      position: absolute;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      width: 150px;
+      height: 150px;
+      background: #dd6b4d;
+    }
+    #p1 {
+      top: 25px;
+      left: 25px;
+    }
+    #p2 {
+      top: 25px;
+      right: 25px;
+    }
+    #p3 {
+      bottom: 25px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    .white {
+      background: #F3F3F3;
+    }
+    .red {
+      background: #C64F4F;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent" id="p1">
+    <div class="white"></div>
+    <div class="red"></div>
+    <div class="white"></div>
+    <div class="red"></div>
+    <div class="white"></div>
+    <div class="red"></div>
+    <div class="white"></div>
+    <div class="red"></div>
+    <div class="white"></div>
+  </div>
+  <div class="parent" id="p2">
+    <div class="white"></div>
+    <div class="red"></div>
+    <div class="white"></div>
+    <div class="red"></div>
+    <div class="white"></div>
+    <div class="red"></div>
+    <div class="white"></div>
+    <div class="red"></div>
+    <div class="white"></div>
+  </div>
+  <div class="parent" id="p3">
+    <div class="white"></div>
+    <div class="red"></div>
+    <div class="white"></div>
+    <div class="red"></div>
+    <div class="white"></div>
+    <div class="red"></div>
+    <div class="white"></div>
+    <div class="red"></div>
+    <div class="white"></div>
+  </div>
+</body>
+</html>
