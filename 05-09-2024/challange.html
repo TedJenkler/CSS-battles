@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout Example</title>
+  <style>
+    body {
+      margin: 0;
+      background: #9076D8;
+    }
+
+    .divider {
+      position: absolute;
+      top: 144px;
+      width: 100%;
+      height: 12.5px;
+      background: #9076D8;
+      z-index: 50;
+    }
+
+    main {
+      display: grid;
+      position: absolute;
+      top: 50px;
+      left: 88px;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: repeat(4, 44px);
+      column-gap: 16px;
+    }
+
+    div {
+      width: 100%;
+      height: 100px;
+      background: #F3EAD2;
+    }
+
+    .start {
+      justify-self: start;
+      align-self: start;
+    }
+
+    .end {
+      justify-self: end;
+      align-self: end;
+    }
+
+    .p1 {
+      height: 100px;
+    }
+
+    .p2 {
+      height: 70px;
+    }
+
+    .p3 {
+      height: 49px;
+    }
+
+    .p4 {
+      height: 34px;
+    }
+  </style>
+</head>
+<body>
+  <div class="divider"></div>
+  <main>
+    <div class="p1 end"></div>
+    <div class="p2 end"></div>
+    <div class="p3 end"></div>
+    <div class="p4 end"></div>
+    <div class="p1 start"></div>
+    <div class="p2 start"></div>
+    <div class="p3 start"></div>
+    <div class="p4 start"></div>
+  </main>
+</body>
+</html>
