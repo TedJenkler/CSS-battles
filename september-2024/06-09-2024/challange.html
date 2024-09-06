@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fish Animation</title>
+  <style>
+    body {
+      margin: 0;
+      background: #328FC1;
+    }
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 8px;
+      left: 39px;
+      border-radius: 100%;
+      z-index: 50;
+      background: #222222;
+      width: 20px;
+      height: 20px;
+    }
+    article {
+      background: #FADE8B;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+    }
+    div {
+      position: absolute;
+      width: 71px;
+      height: 143px;
+      background: #FADE8B;
+      top: 50%;
+      left: 50%;
+    }
+    .fish1 {
+      transform: translate(-50%, -50%) rotate(60deg);
+      border-radius: 28px 0 0 0;
+      z-index: 40;
+    }
+    .fish2 {
+      transform: translate(-50%, -50%) rotate(-60deg);
+      border-radius: 0 0 0 28px;
+      z-index: 30;
+    }
+  </style>
+</head>
+<body>
+  <div class="fish1">
+    <section>
+      <article></article>
+    </section>
+  </div>
+  <div class="fish2"></div>
+</body>
+</html>
