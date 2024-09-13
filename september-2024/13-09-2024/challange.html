@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Base</title>
+  <style>
+    body {
+      margin: 0;
+      background: #8CD5F5;
+    }
+    .base {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 250px;
+      height: 80px;
+      background: #328FC1;
+      border-radius: 40px;
+    }
+    .circle {
+      width: 60px;
+      height: 60px;
+      background: #8CD5F5;
+      z-index: 50;
+      border-radius: 100%;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="base">
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+
+</body>
+</html>
