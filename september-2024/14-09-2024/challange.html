@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Shape</title>
+  <style>
+    body {
+      margin: 0;
+      background: #F5D18C;
+    }
+    .main {
+      position: absolute;
+      left: 50%;
+      top: 135px;
+      transform: translate(-50%,-50%);
+      width: 260px;
+      height: 130px;
+      background: #dd6b4d;
+      border-radius: 130px 130px 0px 0px;
+      background: #328FC1;
+    }
+    .ball {
+      position: absolute;
+      width: 80px;
+      height: 40px;
+      background: #328FC1;
+      border-radius: 0px 0px 40px 40px;
+    }
+    .ball1 {
+      top: 200px;
+      left: 70px;
+    }
+    .ball2 {
+      top: 200px;
+      right: 70px;
+    }
+    .cut {
+      background: #F5D18C;
+      z-index: 50;
+      position: absolute;
+      border-radius: 100%;
+    }
+    .cut1 {
+      top: 170px;
+      left: 80px;
+      width: 60px;
+      height: 60px;
+    }
+    .cut2 {
+      top: 170px;
+      right: 80px;
+      width: 60px;
+      height: 60px;
+    }
+    .cut3 {
+      top: 150px;
+      right: 150px;
+      height: 100px;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main"></div>
+  <div class="ball ball1"></div>
+  <div class="ball ball2"></div>
+  <div class="cut cut1"></div>
+  <div class="cut cut2"></div>
+  <div class="cut cut3"></div>
+
+</body>
+</html>
