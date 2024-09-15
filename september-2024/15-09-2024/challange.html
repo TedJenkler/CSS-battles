@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rings and Circles</title>
+  <style>
+    body {
+      margin: 0;
+      background: #050044;
+    }
+    .ring {
+      position: absolute;
+      width: 60px;
+      border: 10px solid #328FC1;
+      height: 60px;
+      border-radius: 100%;
+      background: #050044;
+    }
+    .r1 {
+      top: 50px;
+      left: 160px;
+      z-index: 30;
+    }
+    .r2 {
+      top: 120px;
+      left: 160px;
+      z-index: 20;
+    }
+    .r3 {
+      top: 190px;
+      left: 160px;
+      z-index: 10;
+    }
+    .circle {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      background: #328FC1;
+    }
+    .c1 {
+      top: 100px;
+      left: 170px;
+      z-index: 25;
+    }
+    .c2 {
+      top: 170px;
+      left: 170px;
+      z-index: 15;
+    }
+  </style>
+</head>
+<body>
+  <div class="ring r1"></div>
+  <div class="ring r2"></div>
+  <div class="ring r3"></div>
+  <div class="circle c1"></div>
+  <div class="circle c2"></div>
+</body>
+</html>
