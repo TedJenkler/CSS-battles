@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Play Button</title>
+  <style>
+    body {
+      margin: 0;
+      background:  #191919;
+    }
+    .base {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 140px;
+      border-radius: 40px;
+      background: #EA333D;
+    }
+    .play {
+      position: relative;
+      left: 7px;
+      background: #FFFFFF;
+      width: 0;
+      height: 0;
+      border-top: 30px solid #EA333D;
+      border-bottom: 30px solid #EA333D;
+      border-left: 50px solid #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="base">
+    <div class="play"></div>
+  </div>
+
+</body>
+</html>
