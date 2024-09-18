@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clipped Shape with Triangles</title>
+  <style>
+    body {
+      margin: 0;
+      background: #49C85B;
+    }
+
+    .base {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 160px;
+      height: 55px;
+      background: #2F5A76;
+      clip-path: polygon(
+        0% 0%, 
+        100% 0%, 
+        90% 50%, 
+        100% 100%, 
+        100% 100%, 
+        0% 100%, 
+        20% 0%, 
+        20% 100%
+      );
+    }
+
+    .tri {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-right: 46px solid transparent;
+      border-left: 46px solid transparent;
+      border-bottom: 80px solid #2F5A76;
+    }
+
+    .t1 {
+      top: 43px;
+      left: 50%;
+      transform: rotate(0deg) translate(-50%, 0);
+    }
+
+    .t2 {
+      bottom: 43px;
+      left: 50%;
+      transform: rotate(180deg) translate(50%, 0);
+    }
+  </style>
+</head>
+<body>
+  <div class="base"></div>
+  <div class="tri t1"></div>
+  <div class="tri t2"></div>
+</body>
+</html>
