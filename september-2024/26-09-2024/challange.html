@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Example</title>
+    <style>
+        body {
+            margin: 0;
+            background: #434B92;
+        }
+        .base {
+            position: absolute;
+            top: 172px;
+            left: 75px;
+            width: 250px;
+            height: 200px;
+            background: #F3AC3C;
+            border-radius: 100% 100% 0 0;
+            overflow: hidden;
+            clip-path: inset(0 0 154px 0);
+            z-index: 10;
+        }
+        .pillar {
+            position: absolute;
+            height: 150px;
+            width: 30px;
+            background: #F3AC3C;
+        }
+        .p1 {
+            top: 40px;
+            left: 125px;
+        }
+        .p2 {
+            top: 40px;
+            right: 125px;
+        }
+        .wheel {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background: #000000;
+            z-index: 1;
+        }
+        .w1 {
+            top: 195px;
+            left: 140px;
+        }
+        .w2 {
+            top: 195px;
+            right: 140px;
+        }
+    </style>
+</head>
+<body>
+    <div class="base"></div>
+    <div class="pillar p1"></div>
+    <div class="pillar p2"></div>
+    <div class="wheel w1"></div>
+    <div class="wheel w2"></div>
+</body>
+</html>
