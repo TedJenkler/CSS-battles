@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shapes Layout</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0B2429;
+    }
+    .square {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 90px;
+      height: 85px;
+      background: #998235;
+    }
+    .bottom {
+      bottom: 0;
+    }
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 130px;
+      height: 90px;
+      border-radius: 60px;
+      background: #F3AC3C;
+    }
+  </style>
+</head>
+<body>
+  <div class="square"></div>
+  <div class="square bottom"></div>
+  <div class="middle"></div>
+</body>
+</html>
