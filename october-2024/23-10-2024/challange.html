@@ -1,0 +1,52 @@
+<div class="box b1">
+    <div class="circle"></div>
+  </div>
+  <div class="box b2">
+    <div class="circle"></div>
+  </div>
+  <div class="box b3">
+    <div class="circle"></div>
+  </div>
+  <div class="box b4">
+    <div class="circle"></div>
+  </div>
+  <style>
+    body {
+      background: #328FC1;
+    }
+    .box {
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      overflow: hidden;
+      background: #243D83;
+    }
+    .circle {
+      position: absolute;
+      top: 50%;
+      width: 90px;
+      height: 90px;
+      border-radius: 100%;
+      background: #EEB850;
+    }
+    .b1 {
+      top: 15px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    .b2 {
+      bottom: 15px;
+      left: 50%;
+      transform: translate(-50%) rotate(180deg);
+    }
+    .b3 {
+      bottom: 50%;
+      left: 65px;
+      transform: translate(0, 50%) rotate(270deg);
+    }
+    .b4 {
+      bottom: 50%;
+      right: 65px;
+      transform: translate(0, 50%) rotate(90deg);
+    }
+  </style>
