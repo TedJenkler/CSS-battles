@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Layout</title>
+  <style>
+    body {
+      background: #191210;
+      margin: 0;
+      overflow: hidden;
+    }
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120px;
+      height: 120px;
+      background: #ECA03D;
+    }
+    .circle {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      top: 50%;
+      left: 50%;
+      background: #191210;
+      transform: translate(-50%, -50%);
+    }
+    .c2 { left: 33.7%; }
+    .c3 { left: 66.3%; }
+    .c4 { top: 23.3%; }
+    .c5 { top: 23.3%; left: 33.7%; }
+    .c6 { top: 23.3%; left: 66.3%; }
+    .c7 { top: 76.7%; }
+    .c8 { top: 76.7%; left: 66.3%; }
+    .c9 { top: 76.7%; left: 33.7%; }
+  </style>
+</head>
+<body>
+  <div class="middle"></div>
+  <div class="circle"></div>
+  <div class="circle c2"></div>
+  <div class="circle c3"></div>
+  <div class="circle c4"></div>
+  <div class="circle c5"></div>
+  <div class="circle c6"></div>
+  <div class="circle c7"></div>
+  <div class="circle c8"></div>
+  <div class="circle c9"></div>
+</body>
+</html>
