@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Squares</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background: #6255AA;
+        }
+        .square {
+            border: 25px solid #D96E9F;
+            background: #6255AA;
+        }
+        .s1 {
+            border-radius: 40px;
+            width: 150px;
+            height: 150px;
+        }
+        .s2 {
+            border-radius: 20px;
+            width: 50px;
+            height: 50px;
+        }
+        .sh1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 150px;
+            background: #6255AA;
+        }
+    </style>
+</head>
+<body>
+    <div class="square s1">
+        <div class="sh1">
+            <div class="square s2">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
