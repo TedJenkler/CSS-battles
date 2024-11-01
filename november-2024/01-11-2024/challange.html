@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Circles and Pillars</title>
+  <style>
+    body {
+      margin: 0;
+      background: #515697;
+    }
+    .main {
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      background: #E38F66;
+    }
+    .m2 {
+      top: 60%;
+      left: 50%;
+      border-radius: 0;
+    }
+    .pillar {
+      position: absolute;
+      bottom: 0px;
+      width: 36px;
+      height: 72px;
+      z-index: 50;
+      background: #515697;
+    }
+    .p1 {
+      left: 59%;
+    }
+    .p2 {
+      left: 77%;
+    }
+    .p3 {
+      left: 32%;
+    }
+    .p4 {
+      left: 14%;
+    }
+  </style>
+</head>
+<body>
+  <div class="main"></div>
+  <div class="main m2"></div>
+  <div class="pillar p1"></div>
+  <div class="pillar p2"></div>
+  <div class="pillar p3"></div>
+  <div class="pillar p4"></div>
