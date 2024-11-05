@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Divs</title>
+  <style>
+    body {
+      margin: 0;
+      background: #61A74E;
+    }
+    .part {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #FADE8B;
+    }
+    .p1 {
+      top: 43.5%;
+      width: 140px;
+      height: 100px;
+      border-radius: 50px;
+    }
+    .p2 {
+      top: 50%;
+      left: 53%;
+      width: 40px;
+      height: 75px;
+      border-radius: 0 100px 200% 100%;
+      transform: rotate(45deg);
+    }
+    .p3 {
+      top: 50%;
+      left: 37.5%;
+      width: 40px;
+      height: 75px;
+      border-radius: 100% 300% 600% 0;
+      transform: rotate(125deg);
+    }
+    .p4 {
+      top: 50%;
+      left: 50%;
+      width: 90px;
+      height: 90px;
+    }
+  </style>
+</head>
+<body>
+  <div class="part p1"></div>
+  <div class="part p2"></div>
+  <div class="part p3"></div>
+  <div class="part p4"></div>
+</body>
+</html>
