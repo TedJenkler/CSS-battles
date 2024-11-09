@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Squares</title>
+  <style>
+    body {
+      margin: 0;
+      background: #62306D;
+    }
+    .square {
+      position: absolute;
+      background: #dd6b4d;
+    }
+    .s1 {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 160px;
+      height: 140px;
+      background: #E38F66;
+      z-index: 20;
+    }
+    .s2 {
+      top: 0;
+      right: 0;
+      width: 180px;
+      height: 130px;
+      z-index: 10;
+      background: #AA445F;
+    }
+    .s3 {
+      bottom: 0;
+      left: 0;
+      width: 180px;
+      height: 130px;
+      z-index: 10;
+      background: #AA445F;
+    }
+  </style>
+</head>
+<body>
+  <div class="square s1"></div>
+  <div class="square s2"></div>
+  <div class="square s3"></div>
+</body>
+</html>
