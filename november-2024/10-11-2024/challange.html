@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Shapes Design</title>
+<style>
+  body {
+    margin: 0;
+    background: #924A4A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .big {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #EEB850;
+    position: relative;
+  }
+  .small {
+    position: absolute;
+    width: 50px;
+    height: 65px;
+    border-radius: 200%;
+    background: #EEB850;
+  }
+  .s1 {
+    top: 26px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .s2 {
+    bottom: 26px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .s3 {
+    bottom: 73px;
+    left: 120px;
+    transform: translate(-50%) rotate(55deg);
+  }
+  .s4 {
+    bottom: 73px;
+    right: 120px;
+    transform: translate(50%) rotate(125deg);
+  }
+  .s5 {
+    top: 72px;
+    right: 120px;
+    transform: translate(50%) rotate(55deg);
+  }
+  .s6 {
+    top: 72px;
+    left: 120px;
+    transform: translate(-50%) rotate(125deg);
+  }
+</style>
+</head>
+<body>
+  <div class="big">
+    <div class="small s1"></div>
+    <div class="small s2"></div>
+    <div class="small s3"></div>
+    <div class="small s4"></div>
+    <div class="small s5"></div>
+    <div class="small s6"></div>
+  </div>
+</body>
+</html>
