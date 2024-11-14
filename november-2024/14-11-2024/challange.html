@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Circles</title>
+  <style>
+    body {
+      margin: 0;
+      background: #FADE8B;
+    }
+    .c1 {
+      position: absolute;
+      top: 50%;
+      left: 47.3%;
+      transform: translate(-55%, -50%);
+      width: 180px;
+      height: 180px;
+      border-radius: 1000%;
+      background: #243D83;
+      z-index: 10;
+    }
+    .c2 {
+      position: absolute;
+      top: 50%;
+      left: 58%;
+      transform: translate(-50%, -50%);
+      width: 155px;
+      height: 166px;
+      border-radius: 100%;
+      background: #61A74E;
+    }
+    .hide {
+      position: absolute;
+      background: #FADE8B;
+      left: 0;
+      right: 0;
+      height: 90px;
+      z-index: 20;
+    }
+    .h1 {
+      top: 0;
+    }
+    .h2 {
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="c1"></div>
+  <div class="c2"></div>
+  <div class="hide h1"></div>
+  <div class="hide h2"></div>
+</body>
+</html>
