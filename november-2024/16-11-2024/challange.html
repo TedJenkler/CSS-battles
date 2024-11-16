@@ -1,0 +1,38 @@
+<div class="container">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      background: #6592CF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      width: 280px;
+      height: 180px;
+      gap: 45px 35px;
+    }
+    .container div:nth-child(odd) {
+      background: #EEB850;
+      width: 70px;
+      height: 30px;
+    }
+    .container div:nth-child(even) {
+      background: #243D83;
+      width: 70px;
+      height: 30px;
+    }
+  </style>
