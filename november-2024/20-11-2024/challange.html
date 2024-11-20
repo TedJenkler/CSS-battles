@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split Square with Triangle</title>
+  <style>
+    body {
+      margin: 0;
+      background: #FADE8B;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .big {
+      width: 200px;
+      height: 200px;
+      background: #61A74E;
+    }
+    .small {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      top: 100px;
+      left: 100px;
+      display: inline-block;
+      background: #3F7331;
+    }
+    .small::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-top: 100px solid transparent;
+      border-right: 100px solid #FADE8B;
+    }
+  </style>
+</head>
+<body>
+  <div class="big">
+    <div class="small"></div>
+  </div>
+</body>
+</html>
