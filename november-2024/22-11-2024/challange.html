@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squares Layout</title>
+  <style>
+    body {
+      background: #ECD5E4;
+      margin: 0;
+    }
+    .square {
+      position: absolute;
+      width: 60px;
+      height: 30px;
+      background: #984842;
+    }
+    .s1 {
+      top: 0;
+      left: 0;
+    }
+    .s2 {
+      top: 0;
+      right: 0;
+    }
+    .s3 {
+      bottom: 0;
+      right: 0;
+    }
+    .s4 {
+      bottom: 0;
+      left: 0;
+    }
+    .s5 {
+      top: 50%;
+      left: 50%;
+      width: 180px;
+      height: 90px;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="square s1"></div>
+  <div class="square s2"></div>
+  <div class="square s3"></div>
+  <div class="square s4"></div>
+  <div class="square s5"></div>
+</body>
+</html>
