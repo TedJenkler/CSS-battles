@@ -1,0 +1,30 @@
+<div class="main">
+    <div class="part p1 rotate180"></div>
+    <div class="part p2 rotaten90"></div>
+    <div class="part p2 rotate90"></div>
+    <div class="part p1"></div>
+  </div>
+  
+  <style>
+    body {
+      margin: 0;
+      background: #2F5A76;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .main {
+      display: grid;
+      grid-template: repeat(2, 110px) / repeat(2, 109px);
+    }
+    .part {
+      border-radius: 0 105px 0 0;
+      width: 109px;
+      height: 110px;
+    }
+    .p1 { background: #F5BB60; }
+    .p2 { background: #F56760; }
+    .rotate180 { transform: rotate(180deg); }
+    .rotaten90 { transform: rotate(-90deg); }
+    .rotate90 { transform: rotate(90deg); }
+  </style>  
