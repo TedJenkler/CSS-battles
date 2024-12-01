@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triangle Design</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0B2429;
+    }
+    div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 80px solid #4A7D7B;
+      width: 0;
+      height: 0;
+      background: transparent;
+    }
+    .t1 {
+      transform: 
+        translate(-50%, -50%)
+        rotate(180deg);
+    }
+    .t2 {
+      transform: translate(50%, -50%);
+    }
+    .t3 {
+      transform: translate(-150%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="t1"></div>
+  <div class="t2"></div>
+  <div class="t3"></div>
+</body>
+</html>
