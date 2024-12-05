@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Design</title>
+  <style>
+    body {
+      margin: 0;
+      background: #F2EAA8;
+    }
+    .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-87%, -50%);
+      width: 200px;
+      height: 200px;
+    }
+    .circle:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      width: 200px;
+      height: 100px;
+      background-color: #7E6293;
+    }
+    .circle:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      width: 200px;
+      height: 100px;
+      background-color: #DE6B67;
+    }
+    .c2 {
+      position: absolute;
+      transform: translate(+25%, -50%);
+      width: 100px;
+      height: 100px;
+    }
+    .c2:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      width: 100px;
+      height: 50px;
+      background-color: #DE6B67;
+    }
+    .c2:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      width: 100px;
+      height: 50px;
+      background-color: #7E6293;
+    }
+    .c3 {
+      position: absolute;
+      transform: translate(250%, -50%);
+      width: 50px;
+      height: 50px;
+    }
+    .c3:before {
+      position: absolute;
+      content: "";
+      top: unset;
+      bottom: 0;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      width: 50px;
+      height: 25px;
+      background-color: #DE6B67;
+    }
+    .c3:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      width: 50px;
+      height: 25px;
+      background-color: #7E6293;
+    }
+  </style>
+</head>
+<body>
+  <div class="circle"></div>
+  <div class="circle c2"></div>
+  <div class="circle c3"></div>
+</body>
+</html>
