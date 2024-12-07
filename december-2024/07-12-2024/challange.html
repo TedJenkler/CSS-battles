@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Design</title>
+  <style>
+    html {
+      background: #FFFFFF;
+    }
+    body {
+      margin: 0;
+      background: #63A3A0;
+      height: 50%;
+    }
+    .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -100%);
+      border-top-right-radius: 100px;
+      border-top-left-radius: 100px;
+      width: 200px;
+      height: 100px;
+      background: #0B2429;
+    }
+    .circle::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+      border-top-right-radius: 40px;
+      border-top-left-radius: 40px;
+      width: 80px;
+      height: 40px;
+      background: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <div class="circle"></div>
+</body>
+</html>
