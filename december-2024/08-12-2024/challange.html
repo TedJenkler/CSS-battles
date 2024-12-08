@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Divs</title>
+  <style>
+    body {
+      margin: 0;
+      background: #6255AA;
+    }
+    body:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      top: 50%;
+      background: #DBD7F6;
+    }
+    .s1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 250px;
+      height: 200px;
+      background: #6255AA;
+      z-index: 2;    
+    }
+    .s1:before {
+      position: absolute;
+      inset: 0;
+      content: "";
+      bottom: 50%;
+      background: #DBD7F6;
+    }
+    .s2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+      background: #DBD7F6;
+      z-index: 3;    
+    }
+    .s2:before {
+      position: absolute;
+      inset: 0;
+      content: "";
+      bottom: 50%;
+      background: #6255AA;
+    }
+  </style>
+</head>
+<body>
+  <div class="s1"></div>
+  <div class="s2"></div>
+</body>
+</html>
