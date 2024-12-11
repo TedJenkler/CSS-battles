@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shapes</title>
+  <style>
+    body {
+      margin: 0;
+      background: #FADE8B;
+    }
+    .main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 332px;
+      height: 253px;
+    }
+    .blue {
+      position: absolute;
+      top: 14.5%;
+      left: 58%;
+      width: 140px;
+      height: 180px;
+      background: #5DBCF9;
+    }
+    .red {
+      position: absolute;
+      top: 0;
+      left: 29%;
+      width: 140px;
+      height: 100px;
+      background: #C3463D;
+    }
+    .s1 {
+      z-index: 5;
+    }
+    .s2 {
+      position: relative;
+      left: 0;
+      top: 45%;
+      height: 40%;
+      z-index: 2;
+    }
+    .s2-2 {
+      position: relative;
+      left: 0;
+      top: -25%;
+      height: 40%;
+      z-index: 11;
+      background: #5DBCF9;
+    }
+    .s3 {
+      top: unset;
+      bottom: 0;
+      z-index: 4;
+    }
+    .s4 {
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="blue s1"></div>
+    <div class="blue s2"></div>
+    <div class="blue s2-2"></div>
+    <div class="red s3"></div>
+    <div class="red s4"></div>
+  </div>
+</body>
+</html>
