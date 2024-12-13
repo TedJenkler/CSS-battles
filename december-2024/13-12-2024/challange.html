@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle and Shape</title>
+  <style>
+    body {
+      margin: 0;
+      background: #61A74E;
+    }
+    .circle {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: #FADE8B;
+    }
+    .circle:before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 120px;
+      border-radius: 50px;
+      background: #61A74E;
+    }
+    .shape {
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(31deg);
+      height: 62px;
+      width: 180px;
+      border-radius: 70px 0 70px 0;
+      background: #FADE8B;
+    }
+  </style>
+</head>
+<body>
+  <div class="circle"></div>
+  <div class="shape"></div>
+</body>
+</html>
