@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotated Divs</title>
+  <style>
+    body {
+      margin: 0;
+      background: #2F5A76;
+    }
+    .main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      width: 100px;
+      height: 100px;
+      background: #F5BB60;
+    }
+    .stick {
+      position: absolute;
+      top: 30%;
+      left: 65%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      width: 100px;
+      height: 30px;
+      background: #F5BB60;
+    }
+    .s2 {
+      left: 35%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    .s3 {
+      top: 70%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    .s4 {
+      top: 70%;
+      left: 35%;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="main"></div>
+  <div class="stick"></div>
+  <div class="stick s2"></div>
+  <div class="stick s3"></div>
+  <div class="stick s4"></div>
+</body>
+</html>
