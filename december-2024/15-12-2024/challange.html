@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Div</title>
+  <style>
+    body {
+      margin: 0;
+      background: #F0F0F0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    div {
+      position: relative;
+      width: 220px;
+      height: 140px;
+      background: #F0F0F0;
+      border: 30px solid #E05947;
+      border-right: none;
+    }
+    div:before {
+      position: absolute;
+      content: "";
+      right: 1px;
+      top: -30px;
+      bottom: 0;
+      width: 68px;
+      height: 140px;
+      border-top-left-radius: 170px;
+      border-bottom-left-radius: 170px;
+      border: 30px solid #E05947;
+      border-right: none;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
