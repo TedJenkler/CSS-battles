@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle and Sticks Design</title>
+  <style>
+    body {
+      margin: 0;
+      background: #6D62BA;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    main {
+      position: relative;
+      width: 210px;
+      height: 210px;
+    }
+    .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: #A1E6E4;
+    }
+    .stick {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%);
+      width: 90px;
+      height: 30px;
+      background: #A1E6E4;
+    }
+    .s2 {
+      top: unset;
+      bottom: 0;
+    }
+    .s3 {
+      top: 50%;
+      left: 0;
+      height: 90px;
+      width: 30px;
+      transform: translate(0, -50%);
+    }
+    .s4 {
+      top: 50%;
+      right: 0;
+      left: unset;
+      height: 90px;
+      width: 30px;
+      transform: translate(0, -50%);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="circle"></div>
+    <div class="stick"></div>
+    <div class="stick s2"></div>
+    <div class="stick s3"></div>
+    <div class="stick s4"></div>
+  </main>
+</body>
+</html>
