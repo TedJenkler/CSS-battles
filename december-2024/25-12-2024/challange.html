@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioned Divs</title>
+  <style>
+    body {
+      margin: 0;
+      background: #D96C7B;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    main {
+      position: relative;
+      width: 250px;
+      height: 250px;
+    }
+
+    div {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%);
+      width: 90px;
+      height: 70px;
+      background: #FFFFFF;
+    }
+
+    div::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      width: 90px;
+      height: 10px;
+      transform: translate(0, -50%);
+      background: #D96C7B;
+    }
+
+    div:nth-child(2) {
+      top: unset;
+      bottom: 0;
+    }
+
+    div:nth-child(3) {
+      top: 50%;
+      left: -10px;
+      transform: translate(0, -50%) rotate(90deg);
+    }
+
+    div:nth-child(4) {
+      top: 50%;
+      transform: translate(50%, -50%) rotate(90deg);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </main>
+</body>
+</html>
