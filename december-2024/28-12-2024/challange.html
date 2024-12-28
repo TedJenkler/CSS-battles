@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colored Div Layout</title>
+  <style>
+    body {
+      margin: 0;
+      background: #3F4869;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    main {
+      position: relative;
+      width: 180px;
+      height: 180px;
+    }
+    .orange {
+      width: 180px;
+      height: 60px;
+      background: #EA9A52;
+      border-radius: 20px 20px 21px 0;
+    }
+    .red {
+      position: absolute;
+      bottom: 0;
+      width: 180px;
+      height: 60px;
+      background: #AA3440;
+      border-radius: 0 20px 21px 21px;
+    }
+    .green {
+      width: 60px;
+      height: 100px;
+      background: #61A74E;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="orange"></div>
+    <div class="red"></div>
+    <div class="green"></div>
+  </main>
+</body>
+</html>
