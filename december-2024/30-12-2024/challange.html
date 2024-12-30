@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Design</title>
+  <style>
+    body {
+      margin: 0;
+      background: #3F4869;
+    }
+    .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      width: 130px;
+      height: 130px;
+      background: #EFCB5C;
+      overflow: hidden;
+    }
+    .circle2 {
+      position: absolute;
+      top: 50%;
+      left: 26%;
+      transform: translate(-50%, -50%) rotate(135deg);
+      border-top-right-radius: 0;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border: 30px solid #978963;
+      border-right: 0;
+      border-bottom: 0;
+      width: 60px;
+      height: 58px;
+    }
+    .circle3 {
+      position: absolute;
+      top: 50%;
+      left: 26%;
+      transform: translate(-50%, -50%);
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #3F4869;
+    }
+  </style>
+</head>
+<body>
+  <div class="circle">
+    <div class="circle2"></div>
+  </div>
+  <div class="circle3"></div>
+</body>
+</html>
