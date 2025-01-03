@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Target Image</title>
+  <style>
+    body {
+      margin: 0;
+      background: #F5E3B5;
+    }
+    .line {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 240px;
+      height: 60px;
+      background: #469DBA;
+    }
+    .circle {
+      position: absolute;
+      top: 40%;
+      left: 65%;
+      transform: translate(-50%, -50%) rotate(180deg);
+      border-top-right-radius: 120px;
+      width: 60px;
+      height: 60px;
+      border: 60px solid #469DBA;
+      border-left: 0;
+      border-bottom: 0;
+    }
+    .c2 {
+      top: 60%;
+      transform: translate(-50%, -50%) rotate(270deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="line"></div>
+  <div class="circle"></div>
+  <div class="circle c2"></div>
+</body>
+</html>
