@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Circle</title>
+  <style>
+    body {
+      margin: 0;
+      background: #B8F4A6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    div {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: #3BA44D;
+    }
+    div:before {
+      position: absolute;
+      content: "";
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 0);
+      height: 200px;
+      width: 50px;
+      background: #B8F4A6;
+    }
+    div:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      height: 50px;
+      width: 200px;
+      background: #B8F4A6;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
