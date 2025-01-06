@@ -1,0 +1,35 @@
+<div class="triangle t1"></div>
+<div class="triangle t2"></div>
+<div class="middle"></div>
+<style>
+  body {
+    margin: 0;
+    background: #B8DCF0;
+  }
+  .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid #3F4869;
+    left: 50%;
+  }
+  .t1 {
+    top: 0;
+    transform: translateX(-50%) rotate(180deg);
+  }
+  .t2 {
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    background: #3F4869;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+</style>
