@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Elements</title>
+  <style>
+    body {
+      margin: 0;
+      background: #FADE8B;
+      position: relative;
+      height: 100vh;
+    }
+    .part1 {
+      position: absolute;
+      top: 5%;
+      left: 31%;
+      transform: translate(-50%);
+      width: 40px;
+      height: 160px;
+      background: #61A74E;
+    }
+    .circle {
+      position: absolute;
+      top: 35%;
+      left: 31%;
+      transform: translate(-50%, 50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 40px solid #61A74E;
+    }
+    .part3 {
+      position: absolute;
+      top: 56%;
+      left: 56.3%;
+      transform: rotate(174deg) translate(50%, 50%);
+      border-top-left-radius: 120px;
+      border: 40px solid #61A74E;
+      border-bottom: 0px;
+      border-right: 0px;
+      width: 120px;
+      height: 90px;
+    }
+    .part4 {
+      position: absolute;
+      top: -15%;
+      left: 69%;
+    }
+  </style>
+</head>
+<body>
+  <div class="part1"></div>
+  <div class="circle"></div>
+  <div class="part3"></div>
+  <div class="circle part4"></div>
+</body>
+</html>
