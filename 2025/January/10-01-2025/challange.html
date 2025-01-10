@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Half Circle and Pin</title>
+  <style>
+    body {
+      margin: 0;
+      background: #FFE4E0;
+      position: relative;
+      height: 100vh;
+    }
+    .half {
+      position: absolute;
+      top: 36.5%;
+      left: 50%;
+      transform: translate(-50%);
+      border-bottom-left-radius: 150px;
+      border-bottom-right-radius: 150px;
+      width: 200px;
+      height: 100px;
+      border: 50px solid #E05947;
+      border-top: none;
+    }
+    .pin {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 120px;
+      background: #E05947;
+    }
+  </style>
+</head>
+<body>
+  <div class="half"></div>
+  <div class="pin"></div>
+</body>
+</html>
