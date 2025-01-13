@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Grid</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #587795;
+    }
+    div {
+      display: grid;
+      padding: 10px;
+      gap: 40px;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 160px;
+      height: 160px;
+      background: #E8AD6D;
+    }
+    span {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #587795;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</body>
+</html>
