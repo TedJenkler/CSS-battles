@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Target Design</title>
+  <style>
+    body {
+      margin: 0;
+      background: #DE817E;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    div {
+      position: relative;
+      width: 120px;
+      height: 130px;
+    }
+    span:nth-child(1) {
+      position: absolute;
+      bottom: 0;
+      width: 120px;
+      height: 20px;
+      background: #EBE77E;
+    }
+    span:nth-child(2) {
+      position: absolute;
+      top: 0;
+      width: 120px;
+      height: 100px;
+      background: #EBE77E;
+    }
+    span:nth-child(2):before,
+    span:nth-child(2):after {
+      position: absolute;
+      content: "";
+      border-top: 44px solid #DE817E;
+      border-right: 30px solid transparent;
+      border-left: 30px solid transparent;
+      top: 0;
+    }
+    span:nth-child(2):before {
+      left: 0;
+    }
+    span:nth-child(2):after {
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <span></span>
+    <span></span>
+  </div>
+</body>
+</html>
