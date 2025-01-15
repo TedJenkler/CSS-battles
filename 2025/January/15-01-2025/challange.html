@@ -1,0 +1,43 @@
+<div class="part p1"></div>
+<div class="part p2"></div>
+<div class="part p3"></div>
+<div class="part p4"></div>
+<style>
+  body {
+    margin: 0;
+    background: #E0E7FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .part {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4F77FF;
+  }
+  .p1 {
+    width: 29.5px;
+    height: 76px;
+    top: 10%;
+  }
+  .p2 {
+    top: 35%;
+    width: 180px;
+    height: 30px;
+    clip-path: polygon(0% 100%, 15% 0%, 85% 0%, 100% 100%);
+  }
+  .p3 {
+    top: 55%;
+    width: 180px;
+    height: 30px;
+    clip-path: polygon(0% 100%, 15% 0%, 85% 0%, 100% 100%);
+    transform: translateX(-50%) rotate(180deg);
+  }
+  .p4 {
+    bottom: 10%;
+    width: 29.5px;
+    height: 76px;
+  }
+</style>
