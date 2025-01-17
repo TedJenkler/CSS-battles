@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Target Image</title>
+  <style>
+    body {
+      background: #61A74E;
+      margin: 30px;
+    }
+    div {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      border: 20px solid #FFFFFF;
+    }
+    .goal {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 20px;
+      height: 60px;
+      border: 20px solid #FFFFFF;
+    }
+    .g1 {
+      left: -20px;
+    }
+    .g2 {
+      right: -20px;
+    }
+    .middle {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      width: 20px;
+      height: 200px;
+      background: #FFFFFF;
+    }
+    .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 20px solid #FFFFFF;
+      background: #61A74E;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <span class="goal g1"></span>
+    <span class="goal g2"></span>
+    <span class="middle"></span>
+    <span class="circle"></span>
+  </div>
+</body>
+</html>
