@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Target Image</title>
+  <style>
+    body {
+      margin: 0;
+      background: #328FC1;
+    }
+    .square {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 140px;
+      height: 140px;
+      background: #FADE8B;
+    }
+    .circle {
+      position: absolute;
+      top: -61.5px;
+      left: -61.5px;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: #FADE8B;
+    }
+    .c2 {
+      top: unset;
+      left: unset;
+      bottom: -61.5px;
+      right: -61.5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="square"></div>
+  <div class="circle"></div>
+  <div class="circle c2"></div>
+</body>
+</html>
