@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Design</title>
+  <style>
+    body {
+      margin: 0;
+      background: #2F5A76;
+    }
+    div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 384px;
+      height: 140px;
+      background: #BFE33A;
+      z-index: 10;
+    }
+    div:before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      content: "";
+      width: 150px;
+      height: 150px;
+      background: #2F5A76;
+      z-index: 20;
+    }
+    div:after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      content: "";
+      width: 70px;
+      height: 70px;
+      background: #BFE33A;
+      z-index: 30;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
