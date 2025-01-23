@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shape Design</title>
+  <style>
+    body {
+      margin: 0;
+      background: #A1E6E4;
+    }
+    div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 140px;
+      background: #2F5A76;
+    }
+    div:before {
+      position: absolute;
+      content: "";
+      top: -30px;
+      left: 30px;
+      width: 240px;
+      height: 200px;
+      background: #2F5A76;
+    }
+    div:after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 180px;
+      height: 80px;
+      background: #A1E6E4;
+    }
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 240px;
+      height: 30px;
+      background: #A1E6E4;
+      z-index: 50;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <span></span>
+  </div>
+</body>
+</html>
