@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Target Image</title>
+  <style>
+    body {
+      margin: 0;
+      background: #469DBA;
+    }
+    .box {
+      display: grid;
+      width: 120px;
+      height: 300px;
+      margin: 15px 0;
+    }
+    .b2 {
+      position: absolute;
+      right: 0;
+      top: -30px;
+      bottom: 0;
+      transform: rotate(180deg);
+    }
+    span {
+      background: #F5E3B5;
+      width: 60px;
+      height: 30px;
+    }
+    span:nth-child(even) {
+      width: 120px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="box b2">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</body>
+</html>
