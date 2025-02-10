@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Square and Circles</title>
+  <style>
+    body {
+      margin: 0;
+      background: #FFFFFF;
+    }
+    .square {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 330px;
+      height: 150px;
+      background: #328FC1;
+    }
+    .square:before {
+      position: absolute;
+      top: 50%;
+      left: -81.7%;
+      transform: translate(50%, -50%);
+      content: "";
+      background: #FFFFFF;
+      width: 200px;
+      height: 220px;
+      border-radius: 50%;
+    }
+    .square:after {
+      position: absolute;
+      top: 50%;
+      left: 60.5%;
+      transform: translate(50%, -50%);
+      content: "";
+      background: #FFFFFF;
+      width: 200px;
+      height: 220px;
+      border-radius: 50%;
+    }
+    span {
+      position: absolute;
+      background: #FFFFFF;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      width: 190px;
+      height: 200px;
+    }
+    span:before {
+      position: absolute;
+      top: 37.3%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      content: "";
+      width: 50px;
+      height: 50px;
+      background: #328FC1;
+    }
+  </style>
+</head>
+<body>
+  <div class="square">
+    <span></span>
+  </div>
+</body>
+</html>
