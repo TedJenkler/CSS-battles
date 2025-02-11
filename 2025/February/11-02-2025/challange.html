@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brick Layout</title>
+  <style>
+    body {
+      margin: 0;
+      background: #FBFDB7;
+    }
+
+    .brick {
+      position: absolute;
+      width: 60px;
+      height: 150px;
+      background: #46BA67;
+    }
+
+    .red {
+      background: #D95362;
+    }
+
+    .brick:nth-child(1) {
+      top: 15%;
+      left: 77.5%;
+      transform: translate(-50%, -50%);
+    }
+
+    .brick:nth-child(2) {
+      top: 15%;
+      left: 22.5%;
+    }
+
+    .brick:nth-child(3) {
+      top: 50%;
+      left: 50%;
+      width: 280px;
+      height: 60px;
+    }
+
+    .brick:nth-child(4) {
+      top: 75%;
+    }
+
+    .brick:nth-child(5) {
+      top: 85%;
+      left: 22.5%;
+    }
+  </style>
+</head>
+<body>
+  <div class="brick red"></div>
+  <div class="brick"></div>
+  <div class="brick"></div>
+  <div class="brick"></div>
+  <div class="brick red"></div>
+</body>
+</html>
