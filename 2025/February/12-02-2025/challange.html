@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Target Replication</title>
+  <style>
+    body {
+      margin: 0;
+      background: #343D42;
+    }
+    .base {
+      position: absolute;
+      top: 41.6%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 220px;
+      height: 170px;
+      border-radius: 110px 110px 0px 0px;
+      background: #7C87D1;
+    }
+    .base:after {
+      position: absolute;
+      content: "";
+      top: 70.3%;
+      left: 0;
+      transform: translate(0%, -50%);
+      height: 20px;
+      width: 220px;
+      background: #343D42;
+    }
+    .base:before {
+      position: absolute;
+      content: "";
+      top: 42.5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 75px;
+      width: 40px;
+      background: #343D42;
+    }
+  </style>
+</head>
+<body>
+  <div class="base"></div>
+</body>
+</html>
