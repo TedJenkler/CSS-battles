@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Target Image</title>
+  <style>
+    body {
+      margin: 0;
+      background: #00B0C8;
+    }
+    div {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 160px;
+      height: 240px;
+    }
+    div:nth-child(2) {
+      left: 210px;
+      transform: rotate(180deg)
+    }
+    div:before {
+      position: absolute;
+      content: "";
+      width: 120px;
+      height: 240px;
+      background: #183539;
+    }
+    div:after {
+      position: absolute;
+      top: 50%;
+      transform: translate(0%, -50%);
+      content: "";
+      width: 160px;
+      height: 120px;
+      background: #183539;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <div></div>
+</body>
+</html>
