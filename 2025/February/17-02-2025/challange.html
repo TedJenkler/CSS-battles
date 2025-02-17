@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes Layout</title>
+    <style>
+        body {
+            margin: 0;
+            background: #2D3464;
+        }
+        .shape {
+            position: absolute;
+            bottom: 0;
+            left: 270px;
+            border-top-right-radius: 100px;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            border: 30px solid #D95362;
+            border-bottom: 0;
+            border-left: 0;
+            width: 50px;
+            height: 30px;
+            transform: rotate(1deg);
+        }
+        .s2 {
+            bottom: 90px;
+            left: 190px;
+            width: 40px;
+        }
+        .s3 {
+            bottom: 30px;
+            left: 230px;
+            width: 40px;
+            transform: rotate(180deg);
+        }
+        .s4 {
+            bottom: 85px;
+            left: 135px;
+            width: 40px;
+            transform: rotate(-89deg);
+        }
+        .s5 {
+            bottom: 30px;
+            left: 99.5px;
+            width: 40px;
+            transform: rotate(100deg);
+        }
+        .s6 {
+            bottom: 0;
+            left: 50px;
+            width: 30px;
+            transform: rotate(-90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="shape"></div>
+    <div class="shape s2"></div>
+    <div class="shape s3"></div>
+    <div class="shape s4"></div>
+    <div class="shape s5"></div>
+    <div class="shape s6"></div>
+</body>
+</html>
