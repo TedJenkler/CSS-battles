@@ -7,40 +7,38 @@
     <style>
         body {
             margin: 0;
-            background: #183539;
+            background: #EBE77E;
         }
-        .s1 {
+        .part {
             position: absolute;
-            left: 50%;
-            transform: translate(-50%, 0%);
-            width: 100px;
-            height: 300px;
-            background: #46BA67;
+            top: 30px;
+            left: 80px;
+            width: 80px;
+            height: 80px;
+            background: #DE817E;
         }
-        .s2 {
+        .part:before {
             position: absolute;
-            top: 37%;
-            left: 52%;
-            transform: translate(-50%, -50%);
-            width: 265px;
-            height: 30px;
-            background: #46BA67;
+            content: "";
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background: #EBE77E;
         }
-        .s3 {
-            position: absolute;
-            top: -15%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 220px;
-            height: 180px;
-            border: 30px solid #46BA67;
-            border-radius: 50%;
+        .p2 {
+            top: 110px;
+            left: 160px;
+        }
+        .p3 {
+            top: 190px;
+            left: 240px;
         }
     </style>
 </head>
 <body>
-    <div class="s1"></div>
-    <div class="s2"></div>
-    <div class="s3"></div>
+    <div class="part"></div>
+    <div class="part p2"></div>
+    <div class="part p3"></div>
 </body>
 </html>
