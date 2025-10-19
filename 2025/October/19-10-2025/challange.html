@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Battle</title>
+  <style>
+    body {
+      background-color: #1A4341;
+    }
+    .abs {
+      position: absolute;
+      background-color: #5A9F48;
+    }
+    .halfcircle {
+      bottom: 5px;
+      left: 5px;
+      width: 160px;
+      height: 80px;
+      border-radius: 0 0 100px 100px;
+    }
+    .halfcircle::after {
+      content: "";
+      background-color: #1A4341;
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100px;
+      height: 50px;
+      border-radius: 0 0 50px 50px
+    }
+    .c2 {
+      bottom: unset;
+      top: 5px;
+      left: unset;
+      right: 5px;
+      border-radius: 100px 100px 0 0;
+    }
+    .c2::after {
+      border-radius: 50px 50px 0 0;
+      bottom: 0;
+    }
+    .block {
+      width: 30.7px;
+      height: 130px;
+      top: 50%;
+      left: 58.7%;
+      transform: translate(0, -50%);
+    }
+    .b2 {
+      top: 56.5%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      height: 30.7px;
+      width: 130px;
+    }
+  </style>
+</head>
+<body>
+  <div class="halfcircle abs"></div>
+  <div class="halfcircle c2 abs"></div>
+  <div class="block b2 abs"></div>
+  <div class="block abs"></div>
+</body>
+</html>
