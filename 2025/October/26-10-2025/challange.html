@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Cut Example</title>
+  <style>
+    body {
+      background-color: #3F4869;
+    }
+    div {
+      position: absolute;
+      top: 5px;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      width: 233px;
+      height: 290px;
+      border-radius: 49% 49% 49% 49%;
+      background: #DE6B67;
+    }
+    div::before {
+      content: "";
+      position: absolute;
+      background: #3F4869;
+      top: 50%;
+      transform: translate(0, -50%);
+      left: 0;
+      width: 240px;
+      height: 150px;
+    }
+    div::after {
+      content: "";
+      position: absolute;
+      background: #DE6B67;
+      width: 210px;
+      height: 210px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      clip-path: inset(33.1% 0 33.1% 0);
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
